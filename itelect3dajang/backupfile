@@ -1,0 +1,20 @@
+public function index()
+    {
+        //
+        $StudentInfo = new student_Info();
+
+        $StudentInfo->idNo = "C20-0285";
+        $StudentInfo->firstName = "Vani";
+        $StudentInfo->middleName = "Salpid";
+        $StudentInfo->lastName = "Dajang";
+        $StudentInfo->suffix = "";
+        $StudentInfo->course = "BSIT";
+        $StudentInfo->year = 3;
+        $StudentInfo->BirthDate = "2001-07-14";
+        $StudentInfo->gender = "Female";
+
+        $StudentInfo->save();
+
+        // echo "test";
+        echo "Student information successfully saved in the database";
+    }
